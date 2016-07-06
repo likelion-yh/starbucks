@@ -1,0 +1,21 @@
+<div class="container">
+  
+     <h1 style="margin-top:20px; text-align: center;">게시판</h1>
+  
+     <form action="/home/update_real/<%=@post.id%>" method="post">
+  
+       <div class="form-group">
+         <label for="title">제 목</label>
+        <input type="string" class="form-control" name="title"
+        value="<%=@post.title_db %>" placeholder="제목을 입력하세요.">
+      </div>
+ 
+      <div class="form-group">
+        <label for="content">내 용</label>
+        <textarea class="form-control" rows="5" name="content"
+        placeholder="내용을 입력하세요." style="resize:none;"><%=@post.content_db%></textarea>
+      </div>
+ 
+      <center> <button type="submit" class="btn btn-default">Submit</button> </center>
+    </form>
+  </div>
