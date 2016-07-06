@@ -12,8 +12,6 @@ Navy::Application.routes.draw do
   get "home/update_view/:my_id" => "home#update_view"
 
   post  "home/update_real/:my_id" => "home#update_real"
-  
-
 
 # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
