@@ -34,4 +34,14 @@ end
   
     redirect_to "/home/list"
   end
+
+  def reply_write
+   reply = Reply.new
+   reply.reply_content = params[:reply_content]
+   reply.post_id = params[:post_number]
+   reply.save 
+   redirect_to "/home/list"
+  end
+
+
 end
